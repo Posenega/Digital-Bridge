@@ -1,0 +1,77 @@
+@use "../../../styles/constants.scss";
+
+.portfolio {
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  background: constants.$secondary-color;
+  display: flex;
+}
+
+.profile__container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 100%;
+}
+
+.personal__info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  align-content: space-around;
+  justify-content: center;
+  h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .personal__info {
+    h2 {
+      font-size: 1.5rem;
+    }
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .portfolio {
+    height: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .personal__info {
+    width: 50%;
+    padding-right: 1.5rem;
+    h2 {
+      font-size: 1.2rem;
+    }
+    span {
+      font-size: 0.6rem;
+    }
+  }
+  .portfolio {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    flex-direction: column-reverse;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .profile__container {
+    width: 85%;
+  }
+  .personal__info {
+    width: 85%;
+    padding-right: 0;
+  }
+}

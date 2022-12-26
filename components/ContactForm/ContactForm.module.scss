@@ -1,0 +1,129 @@
+@use "../../styles/constants.scss";
+.main__container {
+    height: 100%;
+    width: 65%;
+    padding-bottom: 350px;
+    margin: auto;
+    max-width: 1050px;
+    h1 {
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+.main__form {
+    padding: 2.5rem;
+    height: 400px;
+    background-color: constants.$secondary-color;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+.upper__form {
+    flex: 1;
+    display: flex;
+}
+.lower__form {
+    flex: 1;
+}
+.first__column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.second__column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: auto;
+}
+.first {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.second {
+    flex: 1;
+}
+
+.hint__text {
+    font-size: 13px;
+    color: rgb(214, 214, 214);
+    font-weight: 500;
+    position: relative;
+}
+
+.message {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    resize: none;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #2b2b2b;
+    margin-top: 10px;
+    border-radius: 7px;
+
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        transition: color 2s;
+        background-color: rgb(223, 223, 223);
+    }
+}
+
+@media (max-width: 1000px) {
+    .main__container {
+        width: 85%;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .main__container {
+        width: 95%;
+        h1 {
+            font-size: 1.7rem;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .main__container {
+        h1 {
+            text-align: center;
+        }
+    }
+    .main__form {
+        height: auto;
+    }
+    .upper__form {
+        flex-direction: column;
+    }
+    .second__column {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .first__column {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__container {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}

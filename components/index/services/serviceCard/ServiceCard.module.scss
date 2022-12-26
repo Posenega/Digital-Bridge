@@ -1,0 +1,61 @@
+@use "../../../../styles/constants.scss";
+.main__card {
+  display: flex;
+  height: 250px;
+  width: 300px;
+  background-color: constants.$secondary-color;
+  align-items: center;
+  flex-direction: column;
+  padding: 18px 18px;
+  border-radius: 10px;
+  transform: rotate(5deg);
+  border: 3px solid #543d8f;
+  transition: all 0.4s ease-in-out;
+
+  h3 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .main__card {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    h3 {
+      font-size: 13px;
+    }
+    span {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .main__card {
+    width: 200px;
+    height: 160px;
+    h3 {
+      font-size: 11px;
+      margin: 0px;
+    }
+    span {
+      font-size: 8px;
+    }
+  }
+  .svg__container {
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__card {
+    transform: none;
+    margin-bottom: 1rem;
+  }
+}

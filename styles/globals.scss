@@ -1,0 +1,33 @@
+@use "constants";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+html,
+body {
+  background-color: constants.$primary-color;
+  color: constants.$text-color;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  max-width: 2560px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+#__next {
+  min-height: 100%;
+  position: relative;
+}
+
+section {
+  margin-top: -5px;
+}

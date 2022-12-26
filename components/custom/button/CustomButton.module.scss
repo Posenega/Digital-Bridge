@@ -1,0 +1,17 @@
+@use "../../../styles/constants.scss";
+.button__container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    background-color: constants.$button-color;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    span {
+        color: constants.$secondary-color;
+        font-weight: 600;
+    }
+}

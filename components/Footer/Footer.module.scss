@@ -1,0 +1,56 @@
+@use "../../styles/constants";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  height: 300px;
+  width: 100%;
+  background-color: constants.$secondary-color;
+  text-align: center;
+}
+
+.footer__nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 2%;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: inherit;
+    font-family: inherit;
+    color: rgba(constants.$text-color, 0.6);
+    &:hover {
+      transition: color 0.1s;
+      color: constants.$text-color;
+    }
+  }
+}
+
+.footer__divider__container {
+  width: 30%;
+  margin: 0 1rem;
+}
+
+.footer__divider {
+  width: 100%;
+  display: inline-block;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_media__icons {
+  svg {
+    margin: 0 0.5rem;
+  }
+}
